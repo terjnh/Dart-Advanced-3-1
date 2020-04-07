@@ -10,13 +10,13 @@ main(List<String> arguments) {
   }
 
   //Original Data
-  List original = UTF8.encode(data);
+  List original = utf8.encode(data);
 
   //Compress data
-  List compressed = GZIP.encode(original);
+  List compressed = gzip.encode(original);
 
   //Decompress
-  List decompress = GZIP.decode(compressed);
+  List decompress = gzip.decode(compressed);
 
   print('Original ${original.length} bytes');
   print('Compressed ${compressed.length} bytes');
