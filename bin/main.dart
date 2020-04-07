@@ -22,7 +22,7 @@ main(List<String> arguments) {
   print('Compressed ${compressed.length} bytes');
   print('Decompressed ${decompress.length} bytes');
 
-  String decoded = UTF8.decode(decompress);
+  String decoded = utf8.decode(decompress);
   assert(data ==  decoded);
 
   print(decoded);
